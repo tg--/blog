@@ -28,7 +28,7 @@
        position: fixed;
    }
    div#content {
-       top: 10%;
+       top: 50px;
        height: 94%;
        position: absolute;
    }
