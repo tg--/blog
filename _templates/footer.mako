@@ -1,4 +1,4 @@
-<p id="footer">
+<p id="credits">
 <br/>
 Atom feeds for <a href="${bf.util.site_path_helper(bf.config.blog.path,'feed')}">Entries</a><br/>
 &copy; 2010-2011 Thomas Gstaedtner - <a href="https://gitorious.org/tg">site-sources available</a><br/>
