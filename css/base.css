@@ -118,6 +118,11 @@ div#navigation {
    -webkit-box-shadow: 0px 0px 25px #fff;
 }
 
+p#footer {
+   text-align:center;
+   font-size:75%;
+}
+
 /* posts */
 .post_prose {
    margin-left: 10px;
