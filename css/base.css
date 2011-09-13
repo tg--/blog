@@ -76,6 +76,17 @@
    }
 }
 
+@media screen and (min-width: 1200px) {
+   .blog_post {
+       column-width: 40em;
+       -moz-column-width: 40em;
+       -webkit-column-width: 40em;
+       column-gap: 2em;
+       -moz-column-gap: 2em;
+       -webkit-column-gap: 2em;
+   }
+}
+
 @media print {
    div#navigation { display: none; }
    a {
