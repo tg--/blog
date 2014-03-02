@@ -9,6 +9,7 @@
             <aside id="featured" class="body">
                 <article>
                     <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
+                    {% include 'article_infos.html' %}
                     <section id="text">
                         {{ article.summary }}
                     </section>
@@ -22,7 +23,7 @@
             </aside><!-- /#featured -->
             {% if loop.length > 1 %}
                 <section id="content" class="body">
-                    <hr />
+                    <br /><hr />
                     <h1>Other articles</h1>
                     <ol id="posts-list" class="hfeed">
             {% endif %}
