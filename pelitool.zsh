@@ -24,7 +24,7 @@ fi
 
 # run pelican build
 if [[ $1 == "build" ]]; then
-	$pelican -t $theme $content
+	$pelican -t $theme -o $target $content
 fi
 
 # delete all files in the target directory
@@ -51,11 +51,11 @@ if [[ $1 == "new" ]]; then
 	fi
 
 	# create postfile prefilled with template
-	print "date: $(date +%Y-%m-%d\ %T)\ntitle: $2\ncategory:\ntags:\n\n" > $content/$postfile
+	print "date: $(date +%Y-%m-%d\ %T)\ntitle: $2\ncategory:\ntags:\n\n" > $postfile
 
 	# if $EDITOR is set, fire up our editor!
 	if (( $+EDITOR )); then
-		$EDITOR $content/$postfile
+		$EDITOR $postfile
 	fi
 
 	# if content is under version control, lets git add
