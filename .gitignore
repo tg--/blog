@@ -6,3 +6,6 @@ __content
 
 # cache directories
 __pycache__
+
+# plugins (separate repo)
+__plugins
