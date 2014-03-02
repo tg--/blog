@@ -2,7 +2,7 @@
 AUTHOR = 'Thomas Gstaedtner'
 CONTACT = 'thomas@gstaedtner.net'
 SITENAME = 'tg'
-SITEURL = 'http://gstaedtner.net/pelican_test/output'
+SITEURL = 'http://tg.gstaedtner.net'
 TIMEZONE = 'Europe/Berlin'
 LOCALE = 'de_DE.UTF-8'
 
