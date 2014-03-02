@@ -5,7 +5,7 @@
        text-decoration: none;
        color: #00ccff;
    }
-   ul#nav_main {
+   nav ul#main {
        list-style: none;
        margin: 0.2em;
        padding: 0;
@@ -14,29 +14,29 @@
        top: 8px;
        width: 60%;
    }
-   div#nav_header {
+   nav #logo {
        font-size: 300%;
        position: absolute;
        top: -5px;
        left: 10px;
    }
-   div#navigation {
+   nav#main {
        top: 5px;
        left: 8px;
        right: 8px;
        height: 60px;
        position: fixed;
    }
-   div#content {
+   body#index {
        top: 50px;
        height: 94%;
        position: absolute;
    }
-   .nav_item {
+   nav .header {
        display: inline;
        list-style-type: none;
    }
-   .nav_post { display: none; }
+   nav .item { display: none; }
 }
 
 @media screen and (min-height: 451px) and (min-width: 701px) {
@@ -45,39 +45,39 @@
        text-decoration: none;
        color: #00ccff;
    }
-   div#nav_header {
+   nav #logo {
        font-size: 500%;
        position: fixed;
        left: 74%;
        top: 0px;
    }
-   div#navigation {
+   nav#main {
        width: 26%;
        position: fixed;
        right: 1%;
        top: 75px;
    }
-   .nav_item {
-       list-style-position: outside;
-       list-style: none;
-       margin-left: 0;
-       padding-left: 0;
-   }
-   ul#nav_main {
+   nav ul#main {
        top: 50%;
        bottom: 0px;
        margin-left: 15px;
        margin-right: 15px;
        padding-left: 0;
    }
-   .nav_post {
+   nav li.header {
+       list-style-position: outside;
+       list-style: none;
+       margin-left: 0;
+       padding-left: 0;
+   }
+   nav li.item {
        margin-left: 20px;
        list-style-type: square;
    }
 }
 
 @media screen and (min-width: 1200px) {
-   .blog_post {
+   article #text {
        column-width: 40em;
        -moz-column-width: 40em;
        -webkit-column-width: 40em;
@@ -88,7 +88,7 @@
 }
 
 @media print {
-   div#navigation { display: none; }
+   nav#main { display: none; }
    a {
       color: black;
       background-color: white;
@@ -122,26 +122,37 @@ code {
 div#main_block {
 }
 
-div#nav_header {
+nav #logo {
    text-shadow: 1px 1px 3px #fff;
 }
 
-div#navigation {
-   background: #222;
+nav#main {
+   background: #222222;
    border-radius: 15px;
    -moz-border-radius: 15px;
    -webkit-border-radius: 15px;
    box-shadow: 0px 0px 25px #fff;
    -moz-box-shadow: 0px 0px 25px #fff;
    -webkit-box-shadow: 0px 0px 25px #fff;
+   z-index: 99;
 }
 
-p#credits {
+footer.post-info {
+   text-align: right;
+   font-size: 80%;
+}
+
+footer#contentinfo {
    text-align:center;
    font-size:75%;
 }
 
+#posts-list {
+   list-style-type: none;
+}
+
 /* posts */
-.post_prose {
-   margin-left: 10px;
+article a.readmore {
+   position: relative;
+   float: right;
 }

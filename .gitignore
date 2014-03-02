@@ -1,5 +1,8 @@
 # we don't want dynamically generated stuff in git
-_site/*
+__published
 
 # use a seperate repo for posts
-_posts
+__content
+
+# cache directories
+__pycache__
