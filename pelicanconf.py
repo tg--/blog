@@ -22,3 +22,7 @@ SUMMARY_MAX_LENGTH = 200
 FEED_RSS = None
 CATEGORY_FEED_ATOM = 'feeds/category-%s.atom.xml'
 TAG_FEED_ATOM = 'feeds/tag-%s.atom.xml'
+
+# Plugins
+PLUGIN_PATH = '_plugins'
+PLUGINS = ['gzip_cache', 'projects']
