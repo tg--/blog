@@ -61,7 +61,7 @@ function new_post()
 # validate command line parameters
 case $1 in
 	"build") # run pelican build
-		$pelican -t $theme -o $target $content
+		$pelican -v -t $theme -o $target $content
 	;;
 	"clean") # delete all files in the target directory
 		print "Do you really want to delete all files in $output? (y)"
