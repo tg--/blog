@@ -7,10 +7,10 @@ pelican=/usr/bin/pelican
 theme="themes/tg"
 
 # content dir
-content="__content"
+content="_content"
 
 # target dir
-target="__published"
+target="_published"
 
 function print_help()
 {

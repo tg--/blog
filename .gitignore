@@ -1,11 +1,11 @@
 # we don't want dynamically generated stuff in git
-__published
+_published
 
 # use a seperate repo for posts
-__content
+_content
 
 # cache directories
 __pycache__
 
 # plugins (separate repo)
-__plugins
+_plugins
