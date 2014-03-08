@@ -5,6 +5,7 @@ SITENAME = 'tg'
 SITEURL = 'http://tg.gstaedtner.net'
 TIMEZONE = 'Europe/Berlin'
 LOCALE = 'de_DE.UTF-8'
+RELATIVE_URLS = True
 
 # Look'n'Feel
 DEFAULT_PAGINATION = 5
