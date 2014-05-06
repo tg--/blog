@@ -38,7 +38,7 @@ function new_post()
 	fi
 
 	# create postfile prefilled with template
-	print "date: $(date +%Y-%m-%d\ %T)\ntitle: $2\ncategory:\ntags:\n\n" > $postfile
+	print "date: $(date +%Y-%m-%d\ %T)\ntitle: $1\ncategory:\ntags:\n\n" > $postfile
 
 	# if $EDITOR is set, fire up our editor!
 	if (( $+EDITOR )); then
