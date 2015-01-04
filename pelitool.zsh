@@ -51,7 +51,7 @@ function new_post()
 		if [[ $(git --version) < "git version 1.8.5" ]]; then
 			print "Your git version is too old, you need at least git 1.8.5!"
 		else
-			git -C $content add $postfile
+			git -C $content add ${postfile:t}
 			git -C $content commit -m "new post: $1"
 		fi
 	fi
